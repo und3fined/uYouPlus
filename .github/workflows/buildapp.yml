@@ -131,8 +131,7 @@ jobs:
         run: |
           mkdir -p theos/lib/iphone/rootless
           cd ${{ github.workspace }}/main
-          iphone:clang:16.5:14.0
-          sed -i '' "s|iphone:latest:12.0|iphone:16.5:14.0|g" Tweaks/Alderis/Makefile
+          sed -i "" "s|iphone:latest:12.0|iphone:16.5:14.0|g" Tweaks/Alderis/Makefile
           sed -i '' "27s#.*#BUNDLE_ID = ${{ env.BUNDLE_ID }}#g" Makefile
           sed -i '' "26s#.*#DISPLAY_NAME = ${{ env.APP_NAME }}#g" Makefile          
           make package THEOS_PACKAGE_SCHEME=rootless IPA=Payload/YouTube.app FINALPACKAGE=1
