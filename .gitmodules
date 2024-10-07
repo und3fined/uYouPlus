@@ -40,7 +40,7 @@
 	branch = rootless
 [submodule "Tweaks/Alderis"]
 	path = Tweaks/Alderis
-	url = https://github.com/hbang/Alderis.git
+	url = https://github.com/und3fined/Alderis.git
 [submodule "Tweaks/RemoteLog"]
 	path = Tweaks/RemoteLog
 	url = https://github.com/Muirey03/RemoteLog
