@@ -11,6 +11,11 @@ on:
         default: "3.0.4"
         required: true
         type: string
+      uyou_url:
+        description: "The URL for download uYou"
+        default: "https://something.url/uyou.deb"
+        required: false
+        type: string
       decrypted_youtube_url:
         description: "Direct URL to the decrypted YouTube ipa. The version of YouTube will be detected automatically."
         default: ""
@@ -141,6 +146,7 @@ jobs:
         env:
           THEOS: ${{ github.workspace }}/theos
           UYOU_VERSION: ${{ inputs.uyou_version }}
+          UYOU_URL: ${{ inputs.uyou_url }}
           BUNDLE_ID: ${{ inputs.bundle_id }}
           APP_NAME: ${{ inputs.app_name }}
 
