@@ -68,7 +68,7 @@ before-all::
 before-all::
 	@if [[ ! -f $(UYOU_URL) ]]; then \
 		curl -s $(UYOU_URL) -o $(UYOU_DEB); \
-	else if [[ ! -f $(UYOU_DEB) ]]; then \
+	elif [[ ! -f $(UYOU_DEB) ]]; then \
  		curl -s https://repo.miro92.com/debs/com.miro.uyou_$(UYOU_VERSION)_iphoneos-arm.deb -o $(UYOU_DEB); \
  	fi; \
 	if [[ ! -f $(UYOU_DYLIB) || ! -d $(UYOU_BUNDLE) ]]; then \
