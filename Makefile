@@ -21,9 +21,6 @@ endif
 ifndef UYOU_VERSION
 UYOU_VERSION = 3.0.4
 endif
-ifndef UYOU_URL
-UYOU_URL =
-endif
 PACKAGE_NAME = $(TWEAK_NAME)
 PACKAGE_VERSION = $(YOUTUBE_VERSION)-$(UYOU_VERSION)
 
@@ -66,9 +63,10 @@ before-all::
 		$(PRINT_FORMAT_BLUE) "Downloading uYou"; \
 	fi
 before-all::
-	@if [[ ! -f $(UYOU_URL) ]]; then \
+	@if [[ ! -f $(UYOU_DEB) && -n $(UYOU_URL) ]]; then \
 		curl -s $(UYOU_URL) -o $(UYOU_DEB); \
-	elif [[ ! -f $(UYOU_DEB) ]]; then \
+	fi; \
+	if [[ ! -f $(UYOU_DEB) ]]; then \
  		curl -s https://repo.miro92.com/debs/com.miro.uyou_$(UYOU_VERSION)_iphoneos-arm.deb -o $(UYOU_DEB); \
  	fi; \
 	if [[ ! -f $(UYOU_DYLIB) || ! -d $(UYOU_BUNDLE) ]]; then \
