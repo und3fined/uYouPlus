@@ -1,4 +1,12 @@
-# uYouPlus
+# ✈️ uYouPlus is now archived ✈️
+
+
+👉 Well, it’s time to say goodbye. Thank you all for trusting and using uYouPlus over the past years. Honestly, I NEVER expected uYouPlus to gain this much attention when I first uploaded it to GitHub 🤯 I’d also like to thank all the developers who contributed to this repo (see Credit), especially MiRO92, PoomSmart, and level3tjg. They’ve put in an incredible amount of time and effort to keep uYouPlus going until today. They’re the real heroes here 🦸‍♂️
+
+🚀 If you’re looking for an alternative to uYouPlus, I recommend checking out [YTLite 🔍](https://github.com/dayanch96/YTLite). It offers more features and is maintained and updated much more actively than uYouPlus ever was.
+
+👋 Goodbye, and I wish you all the very best! ❤️
+
 
 ![Image 2](https://github.com/qnblackcat/uYouPlus/assets/77606385/c1a1c58a-5d4d-48a6-bb98-d00086719ccc)
 <!--![Image](https://github.com/therealFoxster/uYouPlus/assets/77606385/eb34d3e3-a679-45d0-b2e5-01fdd459ce63)-->
@@ -44,7 +52,7 @@
 - **Compatibility:** Requires iOS/iPadOS 14.0 or later.
 
 <details>
-  <summary>Version information (last updated: Apr 6, 2025)</summary>
+  <summary>Version information (last updated: Apr 13, 2025)</summary>
 
 | **Tweaks/App** | **Developer** | **Version** | **Open source** |
 | - | - | :-: | :-:  |
@@ -57,14 +65,14 @@
 | **YTMiniplayerEnabler** | [level3tjg](https://twitter.com/level3tjg) | 0.0.2 | [✔︎](https://github.com/level3tjg/YTMiniplayerEnabler) |
 | **DontEatMyContent** | [therealFoxster](https://github.com/therealFoxster) | 1.1.10 | [✔︎](https://github.com/therealFoxster/DontEatMyContent) |
 | **Alderis Color Picker** | [HASHBANG Productions](https://github.com/hbang) | 1.2.3 | [✔︎](https://github.com/hbang/Alderis) |
-| **YTUHD** | [PoomSmart](https://twitter.com/poomsmart) | 1.6.0 | [✔︎](https://github.com/PoomSmart/YTUHD) |
+| **YTUHD** | [PoomSmart](https://twitter.com/poomsmart) | 1.6.1 | [✔︎](https://github.com/PoomSmart/YTUHD) |
 | **YouPiP** | [PoomSmart](https://twitter.com/poomsmart) | 1.12.7 | [✔︎](https://github.com/PoomSmart/YouPiP) |
 | **YTABConfig** | [PoomSmart](https://twitter.com/poomsmart) | 1.7.8 | [✔︎](https://github.com/PoomSmart/YTABConfig) |
 | **YTReExplore** | [PoomSmart](https://twitter.com/poomsmart) | 1.0.2 | [✔︎](https://github.com/PoomSmart/YTReExplore) |
 | **NoYTPremium** | [PoomSmart](https://twitter.com/poomsmart) | 1.0.4 | [✔︎](https://github.com/PoomSmart/NoYTPremium) |
 | **YTNoPaidPromo** | [PoomSmart](https://twitter.com/poomsmart) | 1.0.0 | [✔︎](https://github.com/PoomSmart/YTNoPaidPromo) |
 | **YouRememberCaption** | [PoomSmart](https://twitter.com/poomsmart) | 1.0.0 | [✔︎](https://poomsmart.github.io/repo/depictions/youremembercaption.html) |
-| **Return YouTube Dislike** | [PoomSmart](https://twitter.com/poomsmart) | 1.13.6 | [✔︎](https://github.com/PoomSmart/Return-YouTube-Dislikes) |
+| **Return YouTube Dislike** | [PoomSmart](https://twitter.com/poomsmart) | 1.13.7 | [✔︎](https://github.com/PoomSmart/Return-YouTube-Dislikes) |
 | **YouMute** | [PoomSmart](https://twitter.com/poomsmart) | 1.3.1 | [✔︎](https://github.com/PoomSmart/YouMute) |
 | **YouQuality** | [PoomSmart](https://twitter.com/poomsmart) | 1.3.5 | [✔︎](https://github.com/PoomSmart/YouQuality) |
 | **YouTube-X** | [PoomSmart](https://twitter.com/poomsmart) | 1.7.12 | [✔︎](https://github.com/PoomSmart/YouTube-X) |
