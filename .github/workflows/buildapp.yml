@@ -57,7 +57,7 @@ jobs:
       - name: Checkout Main
         uses: actions/checkout@v4.2.1
         with:
-          path: main
+          path: und3fy
           submodules: recursive
 
       - name: Caching brew dependencies
