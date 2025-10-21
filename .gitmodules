@@ -69,3 +69,6 @@
 [submodule "Tweaks/PSHeader"]
 	path = Tweaks/PSHeader
 	url = https://github.com/PoomSmart/PSHeader.git
+[submodule "Tweaks/libundirect"]
+	path = Tweaks/libundirect
+	url = https://github.com/opa334/libundirect.git
