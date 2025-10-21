@@ -1,4 +1,4 @@
-export TARGET = iphone:clang:16.5:14.0
+export TARGET = iphone:clang:16.5:15.0
 export SDK_PATH = $(THEOS)/sdks/iPhoneOS16.5.sdk/
 export SYSROOT = $(SDK_PATH)
 export ARCHS = arm64
@@ -62,6 +62,13 @@ before-all::
 		rm -rf $(UYOU_PATH)/*; \
 		$(PRINT_FORMAT_BLUE) "Downloading uYou"; \
 	fi
+
+	@mkdir -p $(THEOS)/lib/iphone/rootless ; \
+	cp dylib/libundirect.dylib $(THEOS)/lib/iphone/rootless/
+
+	@mkdir -p "$THEOS/include/libundirect" ; \
+	cp Tweaks/libundirect/libundirect.h "$THEOS/include/libundirect/"
+
 before-all::
 	@if [[ ! -f $(UYOU_DEB) && -n $(UYOU_URL) ]]; then \
 		curl -s $(UYOU_URL) -o $(UYOU_DEB); \
