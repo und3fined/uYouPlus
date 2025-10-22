@@ -132,6 +132,16 @@ jobs:
           THEOS: ${{ github.workspace }}/theos
           YOUTUBE_URL: ${{ inputs.decrypted_youtube_url }}
 
+      - name: Prepare libundirect
+        id: prepare_libundirect
+        run: |
+          cd ${{ github.workspace }}/main/Tweaks/libundirect
+          sed -i'' -e 's/16.2/16.5/g' Makefile
+          make FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
+          cp -f .theos/obj/libundirect.dylib ../../dylib/
+        env:
+          THEOS: ${{ github.workspace }}/theos
+
       - name: Fix compiling & Build Package
         id: build_package
         run: |
