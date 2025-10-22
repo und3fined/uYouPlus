@@ -136,13 +136,14 @@ jobs:
         id: prepare_libundirect
         run: |
           cd ${{ github.workspace }}/main/Tweaks/libundirect
-          git clone https://github.com/coolstar/libhooker.git
-          cp -f libhooker/libhooker/include/libhooker.h $THEOS/include/
+          wget $LIBHOOKER_URL --no-verbose -O libhooker.h
+          cp -f libhooker.h $THEOS/include/
           sed -i'' -e 's/16.2/16.5/g' Makefile
           make FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
           cp -f .theos/obj/libundirect.dylib ${{ github.workspace }}/main/dylib/
         env:
           THEOS: ${{ github.workspace }}/theos
+          LIBHOOKER_URL: "https://github.com/coolstar/libhooker/raw/refs/heads/master/libhooker/include/libhooker.h"
 
       - name: Fix compiling & Build Package
         id: build_package
