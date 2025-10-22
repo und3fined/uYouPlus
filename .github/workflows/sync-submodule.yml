@@ -13,6 +13,9 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v5
+        with:
+          submodules: recursive
+          ref: und3fy
 
       - name: Update Submodules
         run: |
