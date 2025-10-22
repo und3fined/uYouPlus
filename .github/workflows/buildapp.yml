@@ -138,7 +138,7 @@ jobs:
           cd ${{ github.workspace }}/main/Tweaks/libundirect
           sed -i'' -e 's/16.2/16.5/g' Makefile
           make FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
-          cp -f .theos/obj/libundirect.dylib ../../dylib/
+          cp -f .theos/obj/libundirect.dylib ${{ github.workspace }}/main/dylib/
         env:
           THEOS: ${{ github.workspace }}/theos
 
