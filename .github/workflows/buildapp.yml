@@ -136,6 +136,9 @@ jobs:
         id: prepare_libundirect
         run: |
           cd ${{ github.workspace }}/main/Tweaks/libundirect
+          git clone --depth=1 https://github.com/coolstar/libhooker.git
+          mkdir -p $THEOS/lib/iphone/rootless
+          cp -f libhooker/include/libhooker.h $THEOS/lib/iphone/rootless/
           sed -i'' -e 's/16.2/16.5/g' Makefile
           make FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
           cp -f .theos/obj/libundirect.dylib ${{ github.workspace }}/main/dylib/
